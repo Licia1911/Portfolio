@@ -1,0 +1,63 @@
+.containerHardSkills, .containerSoftSkills {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 2%;
+    display: block;
+}
+
+.btnSkills {
+    width: 90% !important;
+    background: transparent;
+    color: rgb(163, 151, 173) !important;
+    font-size: 25px !important;
+    text-align: center !important;
+    border: none !important;
+    border-bottom: 2px solid rgb(163, 151, 173) !important;
+    border-radius: 30px !important;
+    margin-top: 5% !important;
+    margin-left: 15px;
+}
+
+.btn :disabled {
+    border: none !important;
+}
+
+.card {
+    width: 50%;
+    margin-left: 90px;
+    margin-bottom: 10px;
+    border-radius: 30px !important;
+    background: transparent !important;
+    border: 2px solid rgb(132, 125, 125) !important;
+    text-align: center !important;
+}
+
+@media screen and (min-width: 768px) {
+    .hys {
+        display: flex;
+    }
+    .containerHardSkills, .containerSoftSkills {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btnSkills {
+        width: 300px !important;
+    }
+
+    .collapse{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 50px;
+    }
+
+    .card {
+        width: 150px !important;
+        margin: 10px;
+    }
+
+
+}

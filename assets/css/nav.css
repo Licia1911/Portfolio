@@ -1,0 +1,68 @@
+.navbar {
+    position: fixed !important;
+    z-index: 1 !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 50px !important;
+    padding: 0 20px !important;
+    background: rgba(0, 0, 0, 0.178);
+    backdrop-filter: blur(5px);
+    justify-content: space-evenly !important;
+}
+
+.avatarLogo {
+    width: 40px;
+    border-radius: 100%;
+    margin-bottom: 3%;
+}
+
+
+.navbar-menu a {
+    transition: .5s;
+}
+
+.navbar-menu i {
+    color: rgb(221, 79, 202);
+    font-size: 1.5rem;
+}
+
+
+.navbar-logo-text {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        height: 100px !important;
+    }
+
+    .avatarLogo {
+        width: 80px;
+    }
+
+    .navbar-menu a {
+        text-decoration: none;
+    }
+
+    .navbar-menu a :hover {
+        text-decoration: underline;
+    }
+
+    .navbar-menu i {
+        font-size: 2rem;
+    }
+
+
+    .navbar-logo-text {
+        display: block;
+        margin-left: 5px;
+        color: rgb(163, 151, 173) !important;
+        text-shadow: 3px 3px 8px rgb(142, 134, 134);
+    }
+
+    .navbar-logo-text:hover {
+        color: rgb(221, 79, 202) !important;
+    }
+}
+

@@ -1,0 +1,46 @@
+.banner {
+    width: 100%;
+}
+
+.escribiendo {
+    display: inline-block;
+}
+
+.tituloAnimado {
+    color: rgb(232, 215, 245) !important;
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    text-shadow: 8px 8px 8px rgb(79, 73, 73);
+    border-right: 4px solid  rgb(232, 215, 245);
+    animation: cursor .5s infinite, 
+    escribiendo 3.5s steps(28,end);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes cursor {
+    0% {border-color: transparent;}
+    50% {border-color: rgb(79, 73, 73);}
+}
+
+@keyframes escribiendo {
+    from{width: 0;}
+    to{width: 80%;}
+}
+
+@media screen and (min-width: 768px) {
+    .tituloAnimado {
+        height: 80px;
+        top: 350px;
+        left: 280px;
+        font-size: 50px;
+    }
+
+    @keyframes escribiendo {
+        from{width: 0;}
+        to{width: 50%;}
+    }
+
+}

@@ -1,0 +1,40 @@
+.containerContacto h6 {
+    text-align: center;
+}
+
+.form-control {
+    width: 85% !important;
+    margin-top: 16px;
+    margin-left: 15px;
+    background-color: transparent !important;
+    border-radius: 20px !important;
+    color: rgb(163, 151, 173) !important;
+}
+
+.form-control:focus {
+    color: rgb(163, 151, 173) !important;
+}
+
+.btnEnviar {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-block {
+    background-color: rgb(119, 47, 104) !important;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .containerContacto h6 {
+        font-size: 24px !important;   
+    }
+
+    .form-group {
+        width: 85%;
+        margin-left: 150px !important;
+    }
+}
